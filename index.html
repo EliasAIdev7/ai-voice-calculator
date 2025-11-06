@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Voice Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container">
+        
+        <!-- Header -->
+        <header>
+            <h1>🎤 AI Voice Calculator</h1>
+            <p class="subtitle">Speak your math, hear the answer</p>
+        </header>
+
+        <!-- Display Section -->
+        <div class="display-section">
+            <!-- What you said -->
+            <div class="input-display" id="inputDisplay">
+                <span class="label">You said:</span>
+                <div class="display-text" id="displayText">Tap microphone to start</div>
+            </div>
+
+            <!-- The answer -->
+            <div class="result-display" id="resultDisplay">
+                <div class="result-text" id="resultText">---</div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <!-- Main Microphone Button -->
+            <button class="mic-button" id="micButton">
+                <span class="mic-icon">🎤</span>
+                <span class="mic-text">Tap to Speak</span>
+            </button>
+
+            <!-- Clear Button -->
+            <button class="clear-button" id="clearButton">
+                Clear
+            </button>
+        </div>
+
+        <!-- Status Message -->
+        <div class="status" id="status"></div>
+
+        <!-- History Section -->
+        <div class="history-section" id="historySection">
+            <h3>📝 History</h3>
+            <div class="history-list" id="historyList">
+                <p class="empty-history">No calculations yet</p>
+            </div>
+        </div>
+
+        <!-- Examples -->
+        <div class="examples">
+            <h3>💡 Try saying:</h3>
+            <div class="example-grid">
+                <div class="example-item">"7 plus 5"</div>
+                <div class="example-item">"10 minus 3"</div>
+                <div class="example-item">"4 times 6"</div>
+                <div class="example-item">"20 divided by 5"</div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>Built with ❤️ by <a href="https://github.com/EliasAIdev7" target="_blank">@EliasAIdev7</a></p>
+            <p class="tech-stack">HTML • CSS • JavaScript • Web Speech API</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
